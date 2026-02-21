@@ -1,10 +1,12 @@
-# D2 Diagram Skill 开源库
+# D2 Diagram Skill 开源库 ✨
 
 [English README](README.md)
 
 这是一个面向 Claude/Agent 工作流的 `d2-diagram` 技能库。
 
-## D2 是什么？
+⚡ CLI 迭代快 · 🧠 对大模型友好 · 🖼️ 多格式导出
+
+## 🎯 D2 是什么？
 
 D2 是一种 declarative 图脚本语言，可以把文本直接转成图（Text -> Diagram）。
 
@@ -16,7 +18,7 @@ D2 是一种 declarative 图脚本语言，可以把文本直接转成图（Text
 
 参考：https://d2lang.com, https://github.com/terrastruct/d2
 
-## 快速开始
+## 🚀 快速开始
 
 安装（无需先 clone）：
 
@@ -33,7 +35,7 @@ iwr https://raw.githubusercontent.com/ChengAoShen/d2-diagram-skill/main/scripts/
 Install-D2Skill -Scope Project -Source Remote -Repo ChengAoShen/d2-diagram-skill -Ref main
 ```
 
-在 Claude 中使用：
+💡 在 Claude 中使用：
 
 ```text
 /d2-diagram Design a service architecture with API gateway, auth service, billing, and Postgres. Export svg and png.
@@ -41,7 +43,7 @@ Install-D2Skill -Scope Project -Source Remote -Repo ChengAoShen/d2-diagram-skill
 
 全局安装、卸载、完整命令矩阵见 `docs/install.md`。
 
-## Skill 执行摘要
+## 🔁 Skill 执行摘要
 
 `d2-diagram` 固定执行链路：
 
@@ -54,7 +56,7 @@ Install-D2Skill -Scope Project -Source Remote -Repo ChengAoShen/d2-diagram-skill
 
 覆盖常见架构图、时序图、SQL ERD 以及核心导出流程。
 
-## 仓库结构
+## 📦 仓库结构
 
 ```text
 .
@@ -66,7 +68,7 @@ Install-D2Skill -Scope Project -Source Remote -Repo ChengAoShen/d2-diagram-skill
 
 运行时安装目录为 `.claude/skills/d2-diagram`（安装后生成）。
 
-## 维护者说明
+## 🧰 维护者说明
 
 - 先改 `skills/d2-diagram/`
 - 同步 runtime：`./scripts/sync-runtime.sh`
@@ -79,10 +81,10 @@ Install-D2Skill -Scope Project -Source Remote -Repo ChengAoShen/d2-diagram-skill
 
 更多见：`CONTRIBUTING.md`。
 
-## 免责声明
+## ⚠️ 免责声明
 
 本仓库用于工程复用与示例。实际行为会受 Claude 运行环境与工具可用性影响，关键场景请先在你的环境验证。
 
-## License
+## 📄 License
 
 MIT（见 `LICENSE`）。

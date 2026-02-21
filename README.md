@@ -1,4 +1,4 @@
-# D2 Diagram Skill Library
+# D2 Diagram Skill Library ✨
 
 [![CI](https://img.shields.io/badge/CI-validate-green)](#maintainers)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -7,7 +7,9 @@
 
 Production-ready `d2-diagram` skill for Claude-style agents.
 
-## What is D2?
+⚡ Fast CLI workflow · 🧠 LLM-friendly syntax · 🖼️ Multi-format export
+
+## 🎯 What is D2?
 
 D2 is a declarative diagram scripting language that turns text into diagrams.
 
@@ -19,7 +21,7 @@ D2 is a declarative diagram scripting language that turns text into diagrams.
 
 References: https://d2lang.com, https://github.com/terrastruct/d2
 
-## Quick Start
+## 🚀 Quick Start
 
 Install (no clone required):
 
@@ -36,7 +38,7 @@ iwr https://raw.githubusercontent.com/ChengAoShen/d2-diagram-skill/main/scripts/
 Install-D2Skill -Scope Project -Source Remote -Repo ChengAoShen/d2-diagram-skill -Ref main
 ```
 
-Use it:
+💡 Use it:
 
 ```text
 /d2-diagram Design a service architecture with API gateway, auth service, billing, and Postgres. Export svg and png.
@@ -44,7 +46,7 @@ Use it:
 
 Need global install, uninstall, or full matrix? See `docs/install.md`.
 
-## Skill Summary
+## 🔁 Skill Summary
 
 `d2-diagram` runs a strict loop:
 
@@ -57,7 +59,7 @@ Need global install, uninstall, or full matrix? See `docs/install.md`.
 
 Coverage includes common architecture flows, sequence diagrams, SQL ERD, and core export paths.
 
-## Repository Layout
+## 📦 Repository Layout
 
 ```text
 .
@@ -69,7 +71,7 @@ Coverage includes common architecture flows, sequence diagrams, SQL ERD, and cor
 
 Runtime install target is generated at `.claude/skills/d2-diagram`.
 
-## Maintainers
+## 🧰 Maintainers
 
 - Edit `skills/d2-diagram/` first.
 - Sync runtime mirror: `./scripts/sync-runtime.sh`
@@ -82,10 +84,10 @@ Runtime install target is generated at `.claude/skills/d2-diagram`.
 
 See also: `CONTRIBUTING.md`.
 
-## Disclaimer
+## ⚠️ Disclaimer
 
 This repository is for practical reuse and demonstration. Behavior can vary by Claude runtime/tool availability. Validate in your own environment before critical use.
 
-## License
+## 📄 License
 
 MIT, see `LICENSE`.
