@@ -1,0 +1,29 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install D2
+        run: |
+          curl -fsSL https://d2lang.com/install.sh | sh -s --
+          d2 version
+
+      - name: Ensure scripts executable
+        run: chmod +x scripts/*.sh
+
+      - name: Selftest repository
+        run: ./scripts/selftest.sh
+
+      - name: Install runtime from local source
+        run: ./scripts/install.sh --scope project --source local
+
+      - name: Validate skill assets
+        run: ./scripts/validate.sh

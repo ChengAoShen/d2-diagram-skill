@@ -1,0 +1,8 @@
+.DS_Store
+.claude/
+*.svg
+*.png
+*.pdf
+*.pptx
+*.gif
+*.txt
