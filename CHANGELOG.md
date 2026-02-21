@@ -4,6 +4,8 @@ All notable changes to this project are documented here.
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-02-21
+
 - Added unified cross-platform installers: `scripts/install.sh` and `scripts/install.ps1`.
 - Added uninstallers for macOS/Linux and Windows.
 - Added Chinese documentation: `README.zh-CN.md`.
